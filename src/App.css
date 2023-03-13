@@ -1,0 +1,54 @@
+@font-face {
+  font-family: lemon milk;
+  src: url(../assets/fonts/LEMONMILK-LIGHT.OTF);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: lemon milk;
+}
+
+.naav{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.index{
+  height: 100vh;
+}
+
+.video__container{
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 769px) {
+  .naav{
+    flex-direction: row;
+  }
+  .index{
+    width: 83vw;
+  }
+  .box{
+    height: 13.4vh;
+    background-color: green;
+    position: relative;
+    top: -5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 12%, rgba(30,75,84,1) 100%);
+    width: 83vw;
+  }
+
+}
+
+@media screen and (min-width:1600px) {
+  .index{
+    width: 87vw;
+  }
+  .box{
+    width: 87vw;
+  }
+}

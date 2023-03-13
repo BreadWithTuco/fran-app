@@ -1,0 +1,164 @@
+:root{
+    --colorMain: #1e4efa;
+}
+
+.navBar__container{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 6vh;
+}
+
+.navBar__menu{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorMain);
+}
+
+.navBar__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+    padding-top: 4rem;
+    background-color: var(--colorMain);
+}
+
+.container_links{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.navBar_hambur{
+    display: block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hamburIcon{
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--colorMain);
+    color: white;
+    z-index: 1;
+}
+
+.navLine{
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    width: 100%;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.active{
+    font-weight: bold;
+    border-left: 4px solid white;
+}
+.links:hover{
+    font-weight: bold;
+    border-left: 4px solid white;
+    background-color: #5778ee;
+    transition: 0.2s;
+}
+
+.logo__box{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border: 1px solid black;
+    transform: rotate(45deg);
+}
+
+.logo__box:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem white;
+    transition: .1s linear;
+}
+
+.logo{
+    width: 100%;
+    transform: rotate(135deg);
+}
+
+.show{
+    display: block;
+}
+
+@media screen and (min-width: 769px) {
+    .navBar__container{
+        background-color: var(--colorMain);
+        width: 17vw;
+        height: 100vh;
+    }
+    .navBar__menu{
+        display: flex;
+        flex-direction: column;
+        display: block;
+        width: 17vw;
+    }
+    
+    .navBar_hambur{
+        display: none;
+    }
+    .container_links{
+        width: 17vw;
+    }
+
+    .links{
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navBar__box{
+        flex-direction: column;
+        justify-content: start;
+        background-color: var(--colorMain);
+    }
+    .navLine{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .logo__box{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+}
+
+@media screen and (min-width:1600px) {
+    .links{
+        font-size: 1.5rem;
+        padding-left: 3rem;
+    }
+    .navBar__container{
+        width: 13vw;
+    }
+    .navBar__menu{
+        width: 13vw;
+    }
+    .container_links{
+        width: 13vw;
+    }
+}
